@@ -41,6 +41,8 @@ else:
         placeholder="Paste your openAI API key, sk-",
         type="password",
     )
+    st.session_state.api_key = user_api_key
+    st.sidebar.success("API key loaded", icon="🚀")
 
 with st.sidebar.expander("📬 Contact"):
     st.write(
